@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+  padding:0;
+  margin:0;
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100vw;
+  overflow-x: hidden!important;
+}
+p{
+  font-family: 'Josefin Sans', sans-serif;
+}
+a{
+  text-decoration:none;
+  color: white;
+}
+:root {
+  --primary-color:#f48b11;
+  --secondary-color:#222222;
+  --heading-font: 40px;
+  --text-font:16px;
+}
+
+.navbar a{
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  transition: all .4s ease;
+}
+.navbar a:hover{
+  color: var(--primary-color);
+}
+.active{
+  color:var(--primary-color)!important;
+  font-weight: 500;
+  border-bottom: 2px solid var(--primary-color);
+}
+.navbar-brand img{
+  width:260px;
+}
+ #register-btn{
+  background:#f48b11;
+  font-size: 18px;
+  font-weight:500;
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  transition: all .5s ease;
+}
+#register-btn:hover{
+  background:#0c6c7c;
+  transform: scale(0.95);
+}
+
+
+#hero{
+  background: url(./assets/img/hero-1.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding-top:180px;
+  padding-bottom:180px;
+  text-align: center;
+}
+#hero .mainHeading{
+  font-size:60px;
+  font-weight:700;
+  color: #ffffff;
+
+}
+#hero .h-desc{
+  color: white;
+
+}
+.btnn{
+  background:#f48b11;
+  font-size: 20px;
+  font-weight:500;
+  padding: 15px 50px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  transition: all .5s ease;
+
+}
+.btnn:hover{
+  background:#0c6c7c;
+  transform: scale(0.95);
+  color: white;
+}
+
+.info-boxx{
+ text-align: center;
+ width:31%;
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ margin-left:10px;
+ transition: all .3s ease-in-out;
+ border-radius:8px;
+ padding: 20px;
+ margin: auto;
+ margin-top: 30px;
+
+}
+.info-boxx:hover{
+  transform: translateY(-7px);
+  box-shadow: none;
+
+}
+.course-boxx{
+  text-align: center;
+  width:31%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-left:15px;
+  transition: all .3s ease-in-out;
+  border-radius:8px;
+  margin: auto;
+  padding: 0; 
+  padding-bottom: 20px;
+  transition: all .5s ease-in-out;
+  margin-top: 15px;
+
+}
+.course-boxx h2{
+padding: 0;
+padding-top:10px;
+padding-left:10px;
+padding-right:10px;
+}
+.course-boxx p{
+padding: 0;
+padding-left:15px;
+padding-right:15px;
+}
+.course-boxx img{
+  transition: all .5s ease-in-out;
+
+}
+.ccccc{
+  padding-left:40px;
+  padding-right: 40px;
+}
+.course-boxx:hover img{
+  transform: scale(1.01);
+}
+.heading{
+  font-size: 40px;
+  color: var(--secondary-color);
+  font-weight: 700;
+  text-align: center;
+}
+.sub-heading{
+  font-size:17px;
+  color: #f48b11;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+}
+.why-sub{
+  text-align: center;
+}
+.nmbr{
+  font-size: 50px;
+  display: inline;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 900;
+  color:#f48b11;
+}
+#about-heading{
+  text-align: left;
+}
+.info-boxx i{
+  font-size: 35px;
+  background: #f48b11;
+  color:#ffffff;
+  padding:15px;
+  margin-top:15px;
+  border-radius:50%;
+}
+.cat{
+ text-align: center;
+ margin-top: 50px;
+ padding-top:100px;
+ padding-bottom: 100px;
+ padding-left:50px;
+ padding-right:50px;
+ background:url('./assets//img/cat-bg.jpg');
+ background-position: center center;
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+.cat h2{
+  color: #ffffff;
+}
+.cat p{
+  color: #ffffff;
+}
+.cat .btnn{
+  margin-top:10px;
+}
+
+.footer{
+  background-size: cover;
+  background-position: center;
+  padding:50px 40px;
+}
+.footer-heading{
+  font-size:25px;
+  font-weight: 500;
+  text-align: left;
+}
+.footer img{
+  width: 250px;
+}
+.footer-menu li a{
+  color: var(--secondary-color);
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.footer li{
+  list-style: none;
+  margin-left: -20px;
+  margin-top: 12px;
+  color: var(--secondary-color);
+  
+}
+.copyright{
+  text-align: center;
+  padding-top:20px;
+  padding-bottom: 6px;
+  padding-left:10px;
+  padding-right: 10px;
+  color: var(--secondary-color);
+  border-top: 1px solid #000;
+
+}
+.copyright a{
+  color:var(--primary-color);
+  font-family: 'Josefin Sans', sans-serif;
+}
+/* Style the WhatsApp icon container */
+
+.footer-link-heading{
+  font-size:22px;
+}
+.footer ul li.social a i{
+  font-size: 25px;
+  margin-top:10px;
+  margin-left:10px;
+}
+
+.bdc{
+  background: url('./assets//img/bdc-bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top:100px;
+  padding-bottom: 100px;
+  color: #ffffff;
+  text-align: center;
+}
+.bdc .heading{
+  color: #ffffff;
+  font-size:50px;
+}
+.bdc a{
+  margin-left: 10px;
+  margin-right:10px;
+  transition: all .3s ease;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+.bdc a:hover{
+  color: var(--primary-color);
+}
+.bdc span{
+  margin-left: 10px;
+  margin-right:10px;
+  transition: all .3s ease;
+  cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+.bdc span:hover{
+  color: var(--primary-color);
+}
+.tutor{
+  margin-top: 50px;
+  padding-left:40px;
+  padding-right: 40px;
+}
+.tutor .sub-heading{
+  text-align: center;
+}
+.tutor-name{
+  font-size: 25px;
+}
+.plan{
+  margin-top: 50px;
+  padding-left:40px;
+  padding-right: 40px;
+}
+.plan-name{
+  font-size: 30px;
+}
+.price{
+  font-size: 25px;
+}
+
+.price-top{
+  background: var(--primary-color);
+padding: 10px;
+}
+.plan-box{
+  padding: 0;
+  padding-bottom: 20px;
+}
+.price{
+  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+.plan-box ul li{
+  list-style: none;
+  font-family: 'Josefin Sans', sans-serif;
+
+ 
+}
+.plan-box ul{
+  padding: 10px;
+  text-align: left;
+  padding-left: 22%;
+}
+
+.plan-name{
+  color: #ffffff;
+}
+.features li i{
+  background: none;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.fee-sub{
+  text-align: center;
+}
+
+.faq{
+  margin-top: 50px;
+}
+.accordion-button{
+  background:var(--primary-color);
+  font-family: 'Josefin Sans', sans-serif;
+
+  color: white;
+}
+
+.accordion-button:not(.collapsed){
+  background: var(--secondary-color);
+  background: var(--primary-color);
+
+  color: white;
+}
+.accordion-body{
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+.contact i{
+  background: none;
+  color: var(--primary-color);
+  padding: 0;
+  padding-bottom: 10px;
+  font-size:40px;
+
+}
+.contact{
+  margin-top: 50px;
+  padding-left:40px;
+  padding-right: 40px;
+}
+.register{
+  padding-left:40px;
+  padding-right: 40px;
+}
+
+.form form input,textarea,select{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius:8px;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+option{
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+.form form input:focus,textarea:focus{
+  border: none;
+}
+.form{
+  margin-top: 50px;
+}
+.contact-heading{
+  margin-bottom: 40px;
+}
+.btnn.submit{
+  width:190px;
+  padding: 15px 50px;
+  border-radius:0;
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  margin-top: 20px;
+
+
+}
+
+.info-boxx#cbox a{
+  color: var(--secondary-color);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.course-boxx{
+  margin-top:30px;
+}
+
+#pbox h2{
+  color: #ffffff;
+}
+
+.trial-text-style{
+  text-align: center;
+  color: var(--primary-color);
+}
+/* MEDIA QUERY */
+@media (max-width:991px) {
+  #register-btn{
+    background:none;
+    color: var(--secondary-color);
+    padding:0;
+
+  }
+
+  .info-boxx{
+    width:46%;
+   }
+  .course-boxx{
+    width:46%;
+   }
+
+}
+@media (max-width:826px) {
+  #hero{
+    padding-top:140px;
+    padding-bottom:140px;
+  }
+  #hero .mainHeading{
+    font-size:50px;
+  }
+
+}
+@media (max-width:590px) {
+
+  #hero .mainHeading{
+    font-size:45px;
+  }
+  .info-boxx{
+    width:95%;
+    margin-left:0px;
+   }
+   .course-boxx{
+    width:95%;
+   }
+   .whyus{
+    padding:50px;
+   }
+   .info-boxx{
+   
+    margin-left:5px;
+    
+   
+   }
+   .course-boxx{
+    margin-left: 10px;
+  }
+
+}
+@media (max-width:470px) {
+
+  #hero .mainHeading{
+    font-size:35px;
+  }
+  .btnn{
+    font-size: 18px;
+    padding: 10px 30px;
+  
+  }
+  .btnn.submit{
+    font-size: 18px;
+    padding: 10px 30px;
+  
+  
+  }
+  .heading{
+    font-size: 35px;
+  }
+  .cat{
+    padding-left:30px;
+    padding-right:30px;
+   }
+   .bdc .heading{
+    font-size:40px;
+  }
+  .bdc{
+    padding-top:80px;
+    padding-bottom:80px;
+  }
+  h2.footer-heading{
+     font-size:25px;
+  }
+  .tutor-name{
+    font-size:25px;
+  }
+  .plan-box ul{
+    padding-left: 12%;
+  }
+  .plan-name{
+    font-size:25px;
+  }
+  .price{
+    font-size:20px;
+  }
+  .contact{
+    padding-left:20px;
+    padding-right: 20px;
+  }
+  .register{
+    padding-left:20px;
+    padding-right: 20px;
+  }
+  .tutor{
+    padding-left:20px;
+    padding-right: 20px;
+  }
+  .info-boxx{
+    padding-left:20px;
+    padding-right: 20px;
+  }
+  .plan-box#pbox{
+    padding-left: 0!important;
+    padding-right:0!important ;
+  }
+  .whyus{
+    padding-left:40px;
+    padding-right: 40px;
+  }
+
+}
+@media (max-width:388px) {
+
+  #hero .mainHeading{
+    font-size:30px;
+  }
+  #hero{
+    padding-top:120px;
+    padding-bottom:120px;
+  }
+
+}
+.whatsapp-icon {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  right: 20px; /* Adjust the distance from the right as needed */
+  z-index: 999;
+}
+
+/* Style the WhatsApp icon image */
+.whatsapp-icon img {
+  width: 60px;
+  z-index: 9999;
+}
+.whatsapp-icon svg {
+  width: 60px;
+  z-index: 9999;
+}
